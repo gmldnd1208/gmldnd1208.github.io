@@ -120,6 +120,7 @@
     background:linear-gradient(180deg, var(--navy-2), var(--navy-3));
     border:1px solid var(--line); border-radius:20px; padding:36px; position:relative; overflow:hidden;
   }
+  .project-card + .project-card{margin-top:24px;}
   .project-top{display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:18px;}
   .project-title{font-size:22px; font-weight:800; margin-bottom:6px;}
   .project-meta{font-size:13px; color:var(--muted);}
@@ -345,8 +346,8 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="kicker">Featured Project</div>
-      <div class="section-title">멀티모달 AI 기반 불량 탐지 · 원인분석 시스템</div>
-      <p class="section-desc">휴먼AI교육센터 심화과정 · 2026.06.16 ~ 2026.07.02</p>
+      <div class="section-title">AI 기반 제조 시스템 프로젝트</div>
+      <p class="section-desc">멀티모달 불량 탐지와 유압 프레스 Digital Twin을 통한 제조 AI 구현</p>
     </div>
 
     <div class="project-card reveal">
@@ -406,6 +407,57 @@
 
       <div class="project-links">
         <a class="btn btn-ghost" href="https://github.com/gmldnd1208/SmtMultiModal.git" target="_blank" rel="noopener">GitHub Repo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title">유압 프레스 Digital Twin · 실시간 위험도 분석 시스템</div>
+          <div class="project-meta">팀 프로젝트 · C++ Solver · LSTM Autoencoder · Unity 3D</div>
+        </div>
+        <span class="badge">Team Project</span>
+      </div>
+
+      <p class="project-desc">
+        실제 설비 데이터가 부족한 환경에서 1D Navier–Stokes 기반 C++ 유압 회로 Solver로 압력·유량·동력 등 물리값을 계산하고,
+        최근 최대 150행의 센서·Solver 시계열을 LSTM Autoencoder로 분석합니다. 정상 운전 패턴에서 벗어날수록
+        위험도를 0~100%로 산출하여 Unity 3D 디지털 트윈 화면에 전달하는 시스템입니다.
+      </p>
+
+      <div class="split">
+        <div class="split-box split-box-me">
+          <h4><span class="dot dot-me"></span> 제 담당 파트</h4>
+          <ul>
+            <li>LSTM Autoencoder 기반 시계열 위험도 모델 설계·구현</li>
+            <li>최근 최대 150행 입력 윈도우 및 StandardScaler 전처리 구성</li>
+            <li>정상 패턴 복원 오차를 0~100% 위험도로 변환</li>
+            <li>학습·검증 파이프라인 및 모델 저장 구조 구현</li>
+          </ul>
+        </div>
+        <div class="split-box">
+          <h4><span class="dot dot-team"></span> 팀 전체 산출물</h4>
+          <ul>
+            <li>1D Navier–Stokes 기반 C++ 유압 회로 Solver</li>
+            <li>센서·Solver 물리값 기반 이상 상태 및 고장 원인 분석</li>
+            <li>Unity 기반 유압 프레스 3D 디지털 트윈 시각화</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-tile"><div class="stat-value">26개</div><div class="stat-label">센서·Solver 입력 항목</div></div>
+        <div class="stat-tile"><div class="stat-value">150행</div><div class="stat-label">최근 시계열 최대 분석 구간</div></div>
+        <div class="stat-tile"><div class="stat-value">0~100%</div><div class="stat-label">정상 패턴 이탈 위험도 출력</div></div>
+      </div>
+
+      <div class="tech-tags">
+        <span class="tag">C++</span><span class="tag">Python</span><span class="tag">PyTorch</span>
+        <span class="tag">LSTM Autoencoder</span><span class="tag">1D Navier–Stokes</span><span class="tag">Unity</span>
+      </div>
+
+      <div class="project-links">
+        <a class="btn btn-ghost" href="https://github.com/gmldnd1208/AI_digitaltwin" target="_blank" rel="noopener">GitHub Repo ↗</a>
       </div>
     </div>
   </div>
